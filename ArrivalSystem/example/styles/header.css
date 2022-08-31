@@ -1,0 +1,68 @@
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.9;
+    color: #999;
+}
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none
+}
+
+/* register */
+.modal-body h5 {
+    color: #350a4e;
+    font-size: 25px;
+    font-weight: 500;
+	font-family: Indie Flower, cursive;
+}
+
+.form-group label {
+    font-family: 'Open Sans', sans-serif;
+	font-family: Ayuthaya;
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #000;
+	margin-bottom: 8px;
+}
+
+.login p a {
+    color: #ed4f4f;
+}
+
+button.submit {
+    background: #22a6f5;
+    border: none;
+    width: 100%;
+    padding: 9px;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+button.submit:hover {
+    background: #ed4f4f;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+
+
+
+
+

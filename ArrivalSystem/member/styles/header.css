@@ -1,0 +1,138 @@
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.9;
+    color: #999;
+}
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+/* register */
+.modal-body h5 {
+    color: #350a4e;
+    font-size: 25px;
+    font-weight: 500;
+	font-family: Indie Flower, cursive;
+}
+
+.form-group label {
+    font-family: 'Open Sans', sans-serif;
+	font-family: Ayuthaya;
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #000;
+	margin-bottom: 8px;
+}
+
+.login p a {
+    color: #453872;
+}
+
+/* button.submit {
+    background:  #A35FD1;
+    border: none;
+    width: 100%;
+    padding: 9px;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+button.submit:hover {
+    background: #453872;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+} */
+
+
+/* .form_submit_button
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	width: 100%;
+	padding: 9px;
+	background: #31124b;
+	-webkit-transform: translateY(15px);
+	-moz-transform: translateY(15px);
+	-ms-transform: translateY(15px);
+	-o-transform: translateY(15px);
+	transform: translateY(15px);
+	border: none;
+	outline: none;
+	margin-top: 10px;
+	cursor: pointer;
+	letter-spacing: 1px;
+    margin-top: 1em;
+}
+.form_submit_button:hover
+{
+	opacity: 0.8;
+} */
+
+/* #fontstylee{
+font-family: Comic Sans MS;
+    font-size: 15px;
+}
+.btn {
+  flex: 1 1 auto;
+  
+  border: none;
+    width: 100%;
+    padding: 9px;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+  text-align: center;
+  text-transform: uppercase;
+  
+  background-size: 200% auto;
+  color: black;
+ text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+Demo Stuff End ->
+
+<- Magic Stuff Start
+
+.btn:hover {
+  background-position: right center; change the direction of the change here
+  color: #5C0116;
+  transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+  
+}
+
+.btn-4 {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+} */
+
+
+
+
+
+

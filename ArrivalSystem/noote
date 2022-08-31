@@ -1,0 +1,1239 @@
+
+-----to show image----
+<?php 
+				$packagequery="select * from package";
+				
+				foreach ($db->query($packagequery) as $row)
+				{
+				    $package_id=$row['package_id'];
+				    $package_image=$row['package_image'];
+				    
+				    echo "<img src='package/$package_image' width='50px' height='50px' class='img-responsive' ";
+				   
+?>
+
+
+
+					<div class="col-md-4"> -->
+							
+                                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example" style="background-color: white; color: black;padding: 10px;">
+<!--                                       <h4 id="verse1">Please Choose Hotel</h4> -->
+<!--                                       <hr> -->
+                                  
+<!--                               			<div class="form-check input_fieldd"> -->
+<!--                                           <label class="form-check-label" for="radio1"> -->
+<!--                                             <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">AAA -->
+<!--                                           </label> -->
+<!--                                         </div> -->
+<!--                                         <div class="form-check input_fieldd"> -->
+<!--                                           <label class="form-check-label" for="radio2"> -->
+<!--                                             <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">BBB -->
+<!--                                           </label> -->
+<!--                                         </div> -->
+<!--                                         <div class="form-check input_fieldd"> -->
+<!--                                           <label class="form-check-label" for="radio3"> -->
+<!--                                             <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">CCC -->
+<!--                                           </label> -->
+<!--                                         </div> -->
+<!--                                         <div class="form-check input_fieldd"> -->
+<!--                                           <label class="form-check-label" for="radio4"> -->
+<!--                                             <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">DDD -->
+<!--                                           </label> -->
+<!--                                         </div> -->
+<!--                                         <div class="form-check input_fieldd"> -->
+<!--                                           <label class="form-check-label" for="radio5"> -->
+<!--                                             <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5">EEE -->
+<!--                                           </label> -->
+<!--                                         </div> -->
+                                      
+<!--                                 </div> -->
+                                
+<!-- 							</div> -->
+
+
+
+<------- Customized Tour -------->
+
+<?php
+include 'header.php';
+?>
+
+
+
+<style>
+
+.homee
+{
+	width: 100%;
+	height: 80vh;
+}
+.home_slider_containerr
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 800px;
+	z-index: 10;
+}
+
+.home_slider_itemm
+{
+	width: 100%;
+	height: 80%;
+}
+.home_slider_backgroundd
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.home_slider_contentt
+{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 11;
+}
+
+#headerstyle{
+	color: black;
+	font-family: "Indie Flower", cursive;
+	font-size: 72px;
+	font-weight: 600;
+	line-height: 86.4px;
+	margin-bottom: 16px;
+	margin-top: 0px;
+	text-align: center;
+	visibility: visible;
+    background-color: #826D96;
+}
+
+.intro_contentt{
+	padding-left: 60px;
+}
+#icoon{
+    color: #ffb400;
+}
+#fontstyle{
+    font-family:Ayuthaya;
+    font-size: 15px;
+    color: black;
+}
+#fontstylee{
+font-family: Comic Sans MS;
+    font-size: 15px;
+}
+#daystyle{
+    color: #FA9E1B;
+    font-family:Ayuthaya;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #5C0116;
+  
+}
+
+.btn-4 {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+
+
+#daystyle{
+    color: black;
+    font-family:Ayuthaya;
+    font-size: 16px;
+    font-weight: bold;
+    }
+    
+   /*           tab3           */ 
+   
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  margin: 100px auto;
+  width: 100%;
+  font-family: Ayuthaya;
+  color: #98927C;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 600px;
+  min-width: 340px;
+  overflow: hidden;
+}
+#tabs #subtab {
+  list-style: none;
+  float: left;
+  width: 20%;
+}
+#tabs #subtab2 {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  line-style: none;
+    position: relative; 
+  color: black;
+/*   width: 100%; */
+  width: 120px;
+  height: 70px;
+  line-height: 90px;
+  background: linear-gradient(165deg, transparent 29%, #98927C 30%);
+}
+#tabs #subtab2:hover,
+#tabs #subtab2.active {
+  background: linear-gradient(165deg, transparent 29%, #F2EEE2 30%);
+  color: #98927C;
+}
+#tabs #subtab2:before {
+  content: '';
+  position: absolute;
+  z-index: 11;
+  left: 100%;
+  top: 0%;
+  height: 70px;
+  line-height: 90px;
+  width: 0;
+  border-bottom: 70px solid rgba(0, 0, 0, 0.1);
+  border-right: 7px solid transparent;
+}
+#tabs #subtab2.active:before {
+  content: '';
+  position: absolute;
+  z-index: 11;
+  left: 100%;
+  top: 0%;
+  height: 70px;
+  line-height: 90px;
+  width: 0;
+  border-bottom: 70px solid rgba(0, 0, 0, 0.2);
+  border-right: 20px solid transparent;
+}
+#first-tab-group {
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); 
+  
+}
+#first-tab-group div {
+  padding: 30px;
+  background: #F2EEE2;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1.style15 {
+	text-align: center;
+}
+
+h1.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -40px;
+	padding: 0 10px;
+	margin-left: -20px;
+ 	color: black; 
+	font-size: 70px;
+}
+   
+.scrollspy-example {
+    position: relative;
+    height: 150px;
+    width: 100%;
+/*     margin-top: 1rem; */
+    overflow: auto;
+}
+.input_fieldd
+{
+	height: 20px;
+	font-size: 14px;
+	font-weight: 200;
+	border: none;
+	outline: none;
+	background: transparent;
+	color: red;
+	
+}
+#verse1{
+    height: 20px;
+	font-size: 18px;
+	font-weight: 400;
+	color: purple;
+	font-family:Ayuthaya;
+}
+
+    
+</style>
+
+
+<!-- Start Part 1 -->
+
+	<div class="homee">
+		<div class="home_slider_containerr">
+			<div class="home_slider_itemm">
+				<div class="home_slider_backgroundd" style="background-image:url(images/customizedimages/customizedtour2.png)">
+					<div class="home_slider_contentt text-center">
+						<h1 id="headerstyle">Customized Tour</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- End Part 1 -->
+
+<!-- Start Part 2 -->
+	
+	<div class="container">
+    	<div class="row">
+				<div class="col-md-5"></div>
+				<div class="col-md-2" style="text-align: center;">
+				<a href="#">
+					<img src="images/customizedimages/customizedtour1.png" width="150px" height="130px" class="img-responsive">
+				</a>
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+<br><br>
+    </div>
+	
+<br><br>
+<!-- End Part 2 -->
+
+<!-- Start Part 3 -->
+
+	
+		<div class="page" style="background-color:  ;height: 1200px;">
+		<h1>Regions</h1>		
+			<!-- tabs -->
+			<div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
+				<input type="radio" name="pcss3t" checked  id="tab1"class="tab-content-first">
+				<label for="tab1"><i class="icon-picture"></i>Yangon</label>
+				
+				<input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
+				<label for="tab2"><i class="icon-picture"></i>Mandalay</label>
+				
+				<input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
+				<label for="tab3"><i class="icon-picture"></i>Bagan</label>
+				
+				<input type="radio" name="pcss3t" id="tab4" class="tab-content-4">
+				<label for="tab4"><i class="icon-picture"></i>Inle</label>
+				
+				<input type="radio" name="pcss3t" id="tab5" class="tab-content-last">
+				<label for="tab5"><i class="icon-picture"></i>Ngapali</label>
+				
+				<ul>
+                <!--  ******************** Yangon ***************** -->
+					<li class="tab-content tab-content-first typography">
+						<h1>Yangon</h1>
+						<div class="row">
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/yangonn.jpg" alt="Yangon" style="width:100%; height: 350px;">
+							</div>
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/yangon.jpg" alt="Yangon" style="width:100%; height: 350px;">
+
+							</div>
+						</div>
+						<br><br><br><br>
+						
+						<div class="container">
+						<div class="row">
+						
+							<div class="col-md-12">
+								<h1>Available Hotel in Yangon</h1>
+									<div id="wrapper">
+                                      <ul id="tabs" class="tabs clearfix" data-tabgroup="first-tab-group">
+                                        <li id="subtab"><a href="#tabb1" class="active" id="subtab2">Shangrila</a></li>
+                                        <li id="subtab"><a href="#tabb2" id="subtab2">Sedona</a></li>
+                                        <li id="subtab"><a href="#tabb3" id="subtab2">Melia</a></li>
+                                        <li id="subtab"><a href="#tabb4" id="subtab2">Novotel</a></li>
+                                        <li id="subtab"><a href="#tabb5" id="subtab2">Park Royal</a></li>
+                                      </ul>
+                                  <section id="first-tab-group" class="tabgroup">
+                                    <div id="tabb1">
+                                      <h2>Shangrila</h2>
+                                      		<img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Shangrila" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                      	
+                                    </div>
+                                    <div id="tabb2">
+                                      <h2>Sedona</h2>
+                                      <img class="rounded" src="images/customizedimages/sedona.jpg" alt="Sedona" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb3">
+                                      <h2>Melia</h2>
+                                      <img class="rounded" src="images/customizedimages/melia.jpg" alt="Melia" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb4">
+                                      <h2>Novotel</h2>
+                                      <img class="rounded" src="images/customizedimages/novotel.jpg" alt="Novotel" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb5">
+                                      <h2>Park Royal</h2>
+                                      <img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Park Royal" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                  </section>
+						</div>
+										
+							</div>
+						</div>
+						</div>
+						<br><br><br><br>
+					</li>
+					<!--  ******************** Yangon ***************** -->
+					
+					<!--  ******************** Mandalay ***************** -->
+					<li class="tab-content tab-content-2 typography">
+						<h1>Mandalay</h1>
+						<div class="row">
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/mandalay.jpg" alt="Yangon" style="width:100%; height: 350px;">
+							</div>
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/mandalayy.jpg" alt="Yangon" style="width:100%; height: 350px;">
+
+							</div>
+						</div>
+						<br><br><br><br>
+						
+						<div class="container">
+						<div class="row">
+						
+							<div class="col-md-12">
+								<h1>Available Hotel in Mandalay</h1>
+									<div id="wrapper">
+                                      <ul id="tabs" class="tabs clearfix" data-tabgroup="first-tab-group">
+                                        <li id="subtab"><a href="#tabb1" class="active" id="subtab2">Shangrila</a></li>
+                                        <li id="subtab"><a href="#tabb2" id="subtab2">Sedona</a></li>
+                                        <li id="subtab"><a href="#tabb3" id="subtab2">Melia</a></li>
+                                        <li id="subtab"><a href="#tabb4" id="subtab2">Novotel</a></li>
+                                        <li id="subtab"><a href="#tabb5" id="subtab2">Park Royal</a></li>
+                                      </ul>
+                                  <section id="first-tab-group" class="tabgroup">
+                                    <div id="tabb1">
+                                      <h2>Shangrila</h2>
+                                      		<img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Shangrila" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                             </p>
+                                      	
+                                    </div>
+                                    <div id="tabb2">
+                                      <h2>Sedona</h2>
+                                      <img class="rounded" src="images/customizedimages/sedona.jpg" alt="Sedona" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb3">
+                                      <h2>Melia</h2>
+                                      <img class="rounded" src="images/customizedimages/melia.jpg" alt="Melia" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb4">
+                                      <h2>Novotel</h2>
+                                      <img class="rounded" src="images/customizedimages/novotel.jpg" alt="Novotel" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb5">
+                                      <h2>Park Royal</h2>
+                                      <img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Park Royal" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                  </section>
+						</div>
+										
+							</div>
+						</div>
+						</div>
+						<br><br><br><br>
+					</li>
+					<!--  ******************** Mandalay ***************** -->
+					
+					<!--  ******************** Bagan ***************** -->
+					<li class="tab-content tab-content-3 typography">
+						<h1>Bagan</h1>
+						<div class="row">
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/bagann.jpg" alt="Yangon" style="width:100%; height: 350px;">
+							</div>
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/bagan.jpg" alt="Yangon" style="width:100%; height: 350px;">
+
+							</div>
+						</div>
+						<br><br><br><br>
+						
+						<div class="container">
+						<div class="row">
+						
+							<div class="col-md-12">
+								<h1>Available Hotel in Bagan</h1>
+									<div id="wrapper">
+                                      <ul id="tabs" class="tabs clearfix" data-tabgroup="first-tab-group">
+                                        <li id="subtab"><a href="#tabb1" class="active" id="subtab2">Shangrila</a></li>
+                                        <li id="subtab"><a href="#tabb2" id="subtab2">Sedona</a></li>
+                                        <li id="subtab"><a href="#tabb3" id="subtab2">Melia</a></li>
+                                        <li id="subtab"><a href="#tabb4" id="subtab2">Novotel</a></li>
+                                        <li id="subtab"><a href="#tabb5" id="subtab2">Park Royal</a></li>
+                                      </ul>
+                                  <section id="first-tab-group" class="tabgroup">
+                                    <div id="tabb1">
+                                      <h2>Shangrila</h2>
+                                      		<img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Shangrila" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                             </p>
+                                      	
+                                    </div>
+                                    <div id="tabb2">
+                                      <h2>Sedona</h2>
+                                      <img class="rounded" src="images/customizedimages/sedona.jpg" alt="Sedona" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb3">
+                                      <h2>Melia</h2>
+                                      <img class="rounded" src="images/customizedimages/melia.jpg" alt="Melia" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb4">
+                                      <h2>Novotel</h2>
+                                      <img class="rounded" src="images/customizedimages/novotel.jpg" alt="Novotel" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb5">
+                                      <h2>Park Royal</h2>
+                                      <img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Park Royal" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                  </section>
+						</div>
+										
+							</div>
+						</div>
+						</div>
+						<br><br><br><br>		
+					</li>
+					<!--  ******************** Bagan ***************** -->
+					
+					<!--  ******************** Inle ***************** -->
+					<li class="tab-content tab-content-4 typography">
+						<div class="typography">
+							<h1>Inle</h1>
+						<div class="row">
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/inlee.jpg" alt="Yangon" style="width:100%; height: 350px;">
+							</div>
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/inle.png" alt="Yangon" style="width:100%; height: 350px;">
+
+							</div>
+						</div>
+						<br><br><br><br>
+						
+						<div class="container">
+						<div class="row">
+						
+							<div class="col-md-12">
+								<h1>Available Hotel in Inle</h1>
+									<div id="wrapper">
+                                      <ul id="tabs" class="tabs clearfix" data-tabgroup="first-tab-group">
+                                        <li id="subtab"><a href="#tabb1" class="active" id="subtab2">Shangrila</a></li>
+                                        <li id="subtab"><a href="#tabb2" id="subtab2">Sedona</a></li>
+                                        <li id="subtab"><a href="#tabb3" id="subtab2">Melia</a></li>
+                                        <li id="subtab"><a href="#tabb4" id="subtab2">Novotel</a></li>
+                                        <li id="subtab"><a href="#tabb5" id="subtab2">Park Royal</a></li>
+                                      </ul>
+                                  <section id="first-tab-group" class="tabgroup">
+                                    <div id="tabb1">
+                                      <h2>Shangrila</h2>
+                                      		<img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Shangrila" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                             </p>
+                                      	
+                                    </div>
+                                    <div id="tabb2">
+                                      <h2>Sedona</h2>
+                                      <img class="rounded" src="images/customizedimages/sedona.jpg" alt="Sedona" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb3">
+                                      <h2>Melia</h2>
+                                      <img class="rounded" src="images/customizedimages/melia.jpg" alt="Melia" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb4">
+                                      <h2>Novotel</h2>
+                                      <img class="rounded" src="images/customizedimages/novotel.jpg" alt="Novotel" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb5">
+                                      <h2>Park Royal</h2>
+                                      <img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Park Royal" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                  </section>
+							</div>
+										
+							</div>
+						</div>
+						</div>
+						<br><br><br><br>
+						</div>
+					</li>
+					<!--  ******************** Inle ***************** -->
+					
+					<!--  ******************** Ngapali ***************** -->
+					<li class="tab-content tab-content-last typography">
+						<div class="typography">
+							<h1>Ngapali</h1>
+						<div class="row">
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/ngapalii.jpg" alt="Yangon" style="width:100%; height: 350px;">
+							</div>
+							<div class="col-md-6">
+								<img class="rounded" src="images/customizedimages/ngapali.jpg" alt="Yangon" style="width:100%; height: 350px;">
+
+							</div>
+						</div>
+						<br><br><br><br>
+						
+						<div class="container">
+						<div class="row">
+						
+							<div class="col-md-12">
+								<h1>Available Hotel in Ngapali</h1>
+									<div id="wrapper">
+                                      <ul id="tabs" class="tabs clearfix" data-tabgroup="first-tab-group">
+                                        <li id="subtab"><a href="#tabb1" class="active" id="subtab2">Shangrila</a></li>
+                                        <li id="subtab"><a href="#tabb2" id="subtab2">Sedona</a></li>
+                                        <li id="subtab"><a href="#tabb3" id="subtab2">Melia</a></li>
+                                        <li id="subtab"><a href="#tabb4" id="subtab2">Novotel</a></li>
+                                        <li id="subtab"><a href="#tabb5" id="subtab2">Park Royal</a></li>
+                                      </ul>
+                                  <section id="first-tab-group" class="tabgroup">
+                                    <div id="tabb1">
+                                      <h2>Shangrila</h2>
+                                      		<img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Shangrila" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                             </p>
+                                      	
+                                    </div>
+                                    <div id="tabb2">
+                                      <h2>Sedona</h2>
+                                      <img class="rounded" src="images/customizedimages/sedona.jpg" alt="Sedona" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb3">
+                                      <h2>Melia</h2>
+                                      <img class="rounded" src="images/customizedimages/melia.jpg" alt="Melia" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb4">
+                                      <h2>Novotel</h2>
+                                      <img class="rounded" src="images/customizedimages/novotel.jpg" alt="Novotel" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                    <div id="tabb5">
+                                      <h2>Park Royal</h2>
+                                      <img class="rounded" src="images/customizedimages/shangrila.jpg" alt="Park Royal" style="width:100%; height: 350px;">
+                                      		<br>
+                                      		<p style="line-height: 30px;color: black;font-family:Ayuthaya;font-size: 15px;margin-left: 20px; text-align: justify;">
+                                                  
+                                                    <img src="images/specialactivities.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Special Activities</span>
+                                                    <br><br>
+                                                    <img src="images/travelarrangement.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Travel Arrangements</span>
+                                                    <br><br>
+                                                    <img src="images/privateguide.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Private Guide</span>
+                                                    <br><br>
+                                                    <img src="images/locationmanager.png" width="30px" height="30px" class="img-responsive">
+                                                    <span>Location Manager</span>
+                                                      	
+                                             </p>
+                                    </div>
+                                  </section>
+						</div>
+										
+							</div>
+						</div>
+						</div>
+						<br><br><br><br>	
+						</div>
+					</li>
+					<!--  ******************** Ngapali ***************** -->
+					
+				</ul>
+			</div>
+			<!--/ tabs -->
+		</div>
+<br><br><br><br>
+
+<!-- End Part 3 -->
+
+<!-- Start Part 4 -->
+
+	<div class="contact_form_section">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+
+					<!-- Contact Form -->
+					<div class="contact_form_container">
+						<div class="contact_title text-center"><h1 class="style15" style="font-size: 5vmin;font-family: Comic Sans MS;">Let's Book</h1></div>
+						<form action="" id="contact_form" class="contact_form text-center" method="post">
+						
+						<div class="row" style="margin-top: 30px;">
+							<div class="col-md-4">
+								<select class="input-fieldd form-control" name="package_id" >
+        		                  <option>Please Choose Region</option>
+            		                 	<?php 
+                						$viewquery="select * from package";
+                						foreach ($db->query($viewquery) as $row)
+                						{
+                						    $package_id=$row['package_id'];
+                						    $package_type=$row['package_type'];
+                						    echo "<option value='$package_id'>$package_type</option>";
+                						}
+                						?>
+                        		</select>
+                        		
+							</div>
+							
+							<div class="col-md-1">
+<!-- 							<input type="submit" name="view" value="View" class="form-control"> -->
+							<button type="submit" name="view" class="form-control"><i class="fa fa-hand-o-right" style="font-size:24px;padding: 2px;"></i></button>
+							</div>
+							
+							<div class="col-md-7">
+							<?php 
+                                if(isset($_POST['view']))
+                                {
+                                    if($_POST['package_id']=="----Please Select----")
+                                    {
+                                        echo "Please Select Package Type";
+                                    }
+                                    else {
+                                        $package_id=$_POST['package_id'];
+                                        $package_type=$_POST['package_type'];
+                                        $v="select * from packagelist where package_id='$package_id'";
+                                        
+                                        echo "<div data-spy='scroll' data-target='#navbar-example2' data-offset='0' class='scrollspy-example' style='background-color: white; color: black;padding: 10px;'>";
+                                        echo "<h4 id='verse1'>Please Choose Hotel in $package_type</h4>";
+                                        echo "<hr>";
+                                        
+                                        foreach ($db->query($v) as $row)
+                                        {
+                                           
+                                            $duration=$row['duration'];
+                                            
+                                            
+                                            echo "<div class='form-check input_fieldd'>";
+                                            echo "<label class='form-check-label' for='radio1'>";
+                                            echo "<input type='radio' class='form-check-input' id='radio1' name='optradio' value='option1'>$duration";
+                                            echo "</label>"; 
+                                            echo "</div>";
+                                            
+                                        }
+                                        echo "</div>";
+                                    }
+                                }
+                                ?>
+							
+							</div>
+							
+						</div> 
+						<!-- row -->
+						
+						<div class="row" style="margin-top: 100px;">
+							<div class="col-md-4">
+								<select class="input-field form-control">
+        		                  <option>Ride</option>
+        		                  <option>Bus</option>
+        		                  <option>Flight</option>
+                        		</select>
+							</div>
+							<div class="col-md-4">
+								<select class="input-field form-control">
+        		                  <option>Duration</option>
+        		                  <option>1</option>
+        		                  <option>2</option>
+        		                  <option>3</option>
+        		                  <option>4</option>
+        		                  <option>More than 4</option>
+                        		</select>
+							</div>
+							<div class="col-md-4">
+								<select class="input-field form-control">
+        		                  <option>Person</option>
+        		                  <option>1</option>
+        		                  <option>2</option>
+        		                  <option>3</option>
+        		                  <option>4</option>
+        		                  <option>More than 4</option>
+                        		</select>
+							</div>
+						</div>
+						<!-- row -->
+						
+						
+						<div class="row" style="margin-top: 80px;">
+						
+							<h2 style="font-size: 3vmin;font-family: Comic Sans MS;align:center;color:white;">Personal Information</h2>
+							<div class="col-md-4"></div>
+							<div class="col-md-4"></div>
+							<div class="col-md-4"></div>
+						</div>
+						
+						
+						
+						
+<!-- 							<input type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Name" required="required" data-error="Name is required."> -->
+<!-- 							<input type="text" id="contact_form_email" class="contact_form_email input_field" placeholder="E-mail" required="required" data-error="Email is required."> -->
+<!-- 							<input type="text" id="contact_form_subject" class="contact_form_subject input_field" placeholder="Subject" required="required" data-error="Subject is required."> -->
+<!-- 							<textarea id="contact_form_message" class="text_field contact_form_message" name="message" rows="4" placeholder="Message" required="required" data-error="Please, write us a message."></textarea> -->
+<!-- 						<button type="submit" id="form_submit_button" class="form_submit_button button trans_200">send message<span></span><span></span><span></span></button> -->
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+<br><br><br><br>
+<!-- End Part 4 -->
+<!-- <script src="js/tab2.js"></script> -->
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="js/index.js"></script>
+<?php
+include 'footer.php';
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+<?php 
+                        $useremail=$_SESSION['login'];
+                        $nrc=$_SESSION['lnrc']; 
+                        $phno=$_SESSION['lphno'];
+                        $sql = "SELECT * from tbl_user where u_Email=:useremail";
+                        $query = $db -> prepare($sql);
+                        $query -> bindParam(':useremail',$useremail, PDO::PARAM_STR);
+                        $query -> bindParam(':nrc',$nrc, PDO::PARAM_STR);
+                        $query -> bindParam(':phno',$phno, PDO::PARAM_STR);
+                        $query->execute();
+                        $results=$query->fetchAll(PDO::FETCH_OBJ);
+//                         $cnt=1;
+                        if($query->rowCount() > 0)
+                        {
+                        foreach($results as $result)
+                        {	?>
+						               
+						               						
+							<h2 style="font-size: 3vmin;font-family: Comic Sans MS;align:center;color:white;margin-top: 80px;">Personal Information</h2>
+							<input type="text" id="contact_form_name" class="contact_form_name input_field" name="u_email" value="<?php echo htmlentities($result->u_Email);?>" readonly>
+							<input type="text" id="contact_form_email" class="contact_form_email input_field" name="u_nrc" value="<?php echo htmlentities($result->u_NRC);?>" readonly>
+							<input type="text" id="contact_form_subject" class="contact_form_subject input_field" name="u_phno" value="<?php echo htmlentities($result->u_Phno);?>" readonly>
+						<?php }} ?>
+						<button type="submit" id="form_submit_button" class="form_submit_button button trans_200">Book</button>
+
+

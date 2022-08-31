@@ -1,0 +1,233 @@
+<?php 
+        $useremail=$_SESSION['login'];
+        $viewquery="select * from tbl_user where u_Email='$useremail'";
+            foreach ($db->query($viewquery) as $row)
+            {
+                $name=$row['u_Name'];
+                $nrc=$row['u_NRC'];
+                $email=$row['u_Email'];
+                $phno=$row['u_Phno'];
+                $address=$row['u_Address'];
+                
+            
+    ?>			
+
+	<p style="width: 350px;">
+		<span id="fontstyleee">Name</span>  
+		<input type="text" name="name" value="<?php echo $name;?>" class="form-control" id="name" required="">
+	</p> 
+
+    <p style="width: 350px;">
+        <span id="fontstyleee">Email</span> 
+        <input type="email" class="form-control" name="email" value="<?php echo $email;?>" id="email" readonly>
+    </p>
+    
+	<p style="width: 350px;">
+		<span id="fontstyleee">NRC</span> 
+		<input type="text" name="nrc" value="<?php echo $nrc;?>" class="form-control" id="nrc" required="">
+	</p> 
+	
+	<p style="width: 350px;">
+		<span id="fontstyleee">PhoneNumber</span> 
+		<input type="number" name="phno" value="<?php echo $phno;?>" class="form-control" id="phno" required="">
+	</p> 
+	
+	<p style="width: 350px;">
+		<span id="fontstyleee">Address</span> 
+		<input type="text" name="address" value="<?php echo $address;?>" class="form-control" id="address" required="">
+	</p> 
+
+<br>
+<?php } ?>
+
+
+
+
+if(isset($_POST['loginsubmit']))
+{
+    
+    $email=$_POST['email'];
+    $password=md5($_POST['password']);
+    $sql ="select * from tbl_user where u_Email='$email' and u_Pw='$password'";
+    
+    
+    foreach ($db->query($sql) as $row)
+    {
+        
+        $_SESSION['login']=$_POST['email'];
+        $i=$row['u_ID'];
+        
+    }
+    
+    if($i==0)
+    {
+        
+        $msg="Something Wrong";
+        
+    }
+    else {
+        $_SESSION['user_id']=$i;
+        echo ("<script>location.href='member/index.php';</script>");
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+    						<div class="col-md-6">
+    							<label class="control-label">Hotel</label>
+    						</div>
+    						<div class="col-md-6">
+    							<p id="fonttstylee">
+               						<span id="fonttstyleee"><?php echo htmlentities($result->hotel);?></span>
+               					</p>
+    						</div>
+    					</div>
+    					<br>		
+    					
+    					<div class="form-group">
+    						<div class="col-md-6">
+    							<label class="control-label">Night</label>
+    						</div>
+    						<div class="col-md-6">
+    							<p id="fonttstylee">
+               						<span id="fonttstyleee"><?php echo htmlentities($result->night);?></span>
+               					</p>
+    						</div>
+    					</div>
+    					<br>	
+    					
+    					<div class="form-group">
+    						<div class="col-md-6">
+    							<label class="control-label">Room</label>
+    						</div>
+    						<div class="col-md-6">
+    							<p id="fonttstylee">
+               						<span id="fonttstyleee"><?php echo htmlentities($result->room);?></span>
+               					</p>
+    						</div>
+    					</div>
+    					<br>	
+    					
+    					<div class="form-group">
+    						<div class="col-md-6">
+    							<label class="control-label">Adults</label>
+    						</div>
+    						<div class="col-md-6">
+    							<p id="fonttstylee">
+               						<span id="fonttstyleee"><?php echo htmlentities($result->adults);?></span>
+               					</p>
+    						</div>
+    					</div>
+    					<br>	
+    					
+    					<div class="form-group">
+    						<div class="col-md-6">
+    							<label class="control-label">Children</label>
+    						</div>
+    						<div class="col-md-6">
+    							<p id="fonttstylee">
+               						<span id="fonttstyleee"><?php echo htmlentities($result->children);?></span>
+               					</p>
+    						</div>
+    					</div>
+
+    					
+    					
+    					
+  
+  <?php
+include 'header.php';
+include 'admin/connect.php';
+$useremail=$_SESSION['login'];
+$book_date=$_SESSION['book_date'];
+?>
+
+<script type="text/javascript">
+function printContent(el){
+	var restorepage=$('body').html();
+	var printcontent=$('#' + el).clone();
+	$('body').empty().html(printcontent);
+	window.print();
+	$('body').html(restorepage);
+
+}
+</script>
+
+<br><br><br><br><br><br><br><br>
+
+<div class="container">
+<div class="row" id="print">
+
+<h2 style="text-align: center">...........Your Voucher Slip Design ...........</h2>
+<div class="col-md-2"></div>
+<div class="col-md-8">
+<table>
+<tr>
+					<th>No</th>
+					<th>Book Date</th>
+					<th>Region</th>
+					<th>Hotel</th>
+					<th>Check-In</th>
+					<th>Check-Out</th>
+					<th>Nights</th>
+					<th>Room</th>
+					<th>Adults</th>
+					<th>Children</th>
+					<th>Payment Type</th>
+				</tr>
+				
+				<?php 
+				$viewquery="select * from tbl_hotelbooking where u_Email='$useremail' and book_date='$book_date'";
+				$i=1;
+				foreach ($db->query($viewquery) as $row)
+				{
+				    $book_date=$row['book_date'];
+				    $region=$row['region'];
+				    $hotel=$row['hotel'];
+				    $checkin=$row['checkin'];
+				    $checkout=$row['checkout'];
+				    $night=$row['night'];
+				    $room=$row['room'];
+				    $adults=$row['adults'];
+				    $children=$row['children'];
+				    $paymenttype=$row['paymenttype'];
+				    
+				    echo "<tr>";
+				    echo "<td>$i</td>";
+				    echo "<td>$book_date</td>";
+				    echo "<td>$region</td>";
+				    echo "<td>$hotel</td>";
+				    echo "<td>$checkin</td>";
+				    echo "<td>$checkout</td>";
+				    echo "<td>$night</td>";
+				    echo "<td>$room</td>";
+				    echo "<td>$adults</td>";
+				    echo "<td>$children</td>";
+				    echo "<td>$paymenttype</td>";
+			
+				    echo "</tr>";
+				    $i++;
+				}
+				?>
+</table>
+</div>
+<div class="col-md-2"></div>
+</div>
+<form action="" class="form-group">
+	<div class="form-group">
+  
+  <input type="button" class="form-control" value="PRINT" id="printbtn" onclick="printContent('print')">
+</div>
+</form>
+</div>  					
+    					
+    					
+    					
